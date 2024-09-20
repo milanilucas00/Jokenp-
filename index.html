@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/jokenpo/src/css/reset.css">
+    <link rel="stylesheet" href="/jokenpo/src/css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-externo">
+            <div class="container-interno">
+                <div class="container-interno2">
+                    <h1>Jokenpô!</h1>
+                    <div class="container-resultado">
+                        <p class="score-txt">Score Jogador: <span id="score-jogador">00</span></p>
+                        <div class="resultado" id="resultado-maquina">
+                        </div>
+                        <p class="score-txt">Score Máquina: <span id="score-maquina">00</span></p>
+                    </div>
+                    <p class="selecao-txt" id="selecao-txt">Escolha um sinal!</p>
+
+                    <div class="jogador-selecao">
+                        <button id="stone" class="btn">
+                            <img src="/jokenpo/src/images/stone.jpg" alt="stone">
+                        </button>
+                        <button id="paper" class="btn">
+                            <img src="/jokenpo/src/images/paper.jpg" alt="paper">
+                        </button>
+                        <button id="scissor" class="btn">
+                            <img src="/jokenpo/src/images/scissor.jpg" alt="scissor">
+                        </button>
+                    </div>
+                    <div class="restart-container" id="restart-container">
+                        <p class="restart-txt">Jogar novamente?</p>
+                        <div class="restart-buttons">
+                            <button id="restart-yes" class="restart-btn">Sim</button>
+                            <button id="restart-no" class="restart-btn">Não</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/jokenpo/src/js/script.js"></script>
+    </main>
+</body>
+
+</html>

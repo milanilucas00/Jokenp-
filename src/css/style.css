@@ -1,0 +1,157 @@
+.container-externo {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #27449f, rgba(24, 23, 27, 1));
+}
+
+.container-externo .container-interno {
+    width: 785px;
+    height: 785px;
+    background-color: #6cd0d0;
+    clip-path: polygon(20% 50%, 0 20%, 30% 25%, 50% 0, 70% 25%, 100% 20%, 80% 50%, 100% 85%, 70% 80%, 50% 100%, 30% 80%, 0 85%);
+}
+
+.container-externo .container-interno .container-interno2 {
+    height: 785px;
+    width: 785px;
+    background-color: #f98128;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(22% 50%, 3% 22%, 31% 27%, 50% 2%, 69% 27%, 97% 22%, 78% 50%, 97% 83%, 69% 78%, 50% 98%, 31% 78%, 3% 83%);
+    position: relative;
+}
+
+
+.container-externo .container-interno .container-interno2 h1 {
+    font-size: 6rem;
+}
+
+.container-externo .container-interno .container-interno2 .container-resultado {
+    display: flex;
+    align-items: center;
+    width: 52%;
+    justify-content: space-between;
+}
+
+.container-externo .container-interno .container-interno2 .container-resultado .score-txt {
+    font-size: 1.5rem;
+}
+
+.container-externo .container-interno .container-interno2 .container-resultado #score-jogador, #score-maquina {
+    font-size: 1.5rem;
+}
+
+.container-externo .container-interno .container-interno2 .container-resultado .resultado {
+    width: 128px;
+    height: 160px;
+    background-color: white;
+}
+
+.container-externo .container-interno .container-interno2 .selecao-txt {
+    font-size: 3rem;
+}
+
+
+.container-externo .container-interno .container-interno2 .jogador-selecao {
+    display: flex;
+    gap: 30px;
+}
+
+@keyframes blink {
+    0% {
+        box-shadow: 0 0 10px #ffffff(255, 0, 0, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 100px #ffffff;
+    }
+
+    100% {
+        box-shadow: 0 0 10px #ffffff(255, 0, 0, 0.5);
+    }
+}
+
+.container-externo .container-interno .container-interno2 .jogador-selecao .btn {
+    transition: 0.1s;
+}
+
+.container-externo .container-interno .container-interno2 .jogador-selecao .btn:hover {
+    animation: blink 0.7s ease-in-out infinite;
+    scale: 1.1;
+}
+
+.container-externo .container-interno .container-interno2 .restart-container {
+    display: none;
+    margin-top: 5px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 12%;
+}
+
+.container-externo .container-interno .container-interno2 .restart-container .restart-txt {
+    font-size: 1.5rem;
+}
+
+.container-externo .container-interno .container-interno2 .restart-container .restart-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.container-externo .container-interno .container-interno2 .restart-container .restart-buttons .restart-btn {
+    font-size: 1.5rem;
+    padding: 3px;
+    border-radius: 15px;
+    background-color: #16f80e;
+    border-color: #16f80e;
+}
+
+.container-externo .container-interno .container-interno2 .restart-container .restart-buttons .restart-btn:last-child{
+    background-color: #e21818;
+    border-color: #e21818;
+}
+
+.container-externo .container-interno .container-interno2 .restart-container .restart-buttons .restart-btn:hover {
+    animation: blink 0.4s ease-in-out infinite;
+    scale: 1.1;    
+}
+
+@keyframes scaleEffect {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fallEffect {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes shakeEffect {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(3px); }
+    50% { transform: translateX(-3px); }
+    75% { transform: translateX(3px); }
+    100% { transform: translateX(0); }
+}
+
+.container-interno.scaleEffect, .container-interno2.scaleEffect {
+    animation: scaleEffect 1s ease-in-out;
+}
+
+.container-interno.fallEffect, .container-interno2.fallEffect {
+    animation: fallEffect 1s ease-in-out;
+}
+
+.container-interno.shakeEffect, .container-interno2.shakeEffect {
+    animation: shakeEffect 0.5s ease-in-out;
+}
