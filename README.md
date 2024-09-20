@@ -25,3 +25,4 @@ Neste projeto, aprendi a utilizar clip-path, que eu não conhecia até então. A
 
 Clone o repositório:
 
+git clone https://github.com/milanilucas00/Jokenpo
