@@ -1,7 +1,7 @@
-![Screenshot Jokenpô](/jokenpo/src/images/screenshot1.png)
-![Screenshot Jokenpô](/jokenpo/src/images/screenshot2.png)
-![Screenshot Jokenpô](/jokenpo/src/images/screenshot3.png)
-![Screenshot Jokenpô](/jokenpo/src/images/screenshot4.png)
+![screenshot3](https://github.com/user-attachments/assets/d2ecdd0e-883f-4354-8412-8e055b4022eb)
+![screenshot1](https://github.com/user-attachments/assets/64f803c3-aacb-4b3c-acfb-93f78610e5a8)
+![screenshot2](https://github.com/user-attachments/assets/fadea47a-2fbb-40d3-bb34-e9e84ca1fc46)
+![screenshot4](https://github.com/user-attachments/assets/b8c4dbb3-3748-4883-8e4d-58c0dfe3dfd6)
 
 
 # Jokenpô
